@@ -13,8 +13,8 @@ module.exports = {
       nav: [
         { text: '主页', link: '/' },
         { text: '基础库', link: '/Library/znxy/base' },
-        { text: '基础组件', link: '/Components/' },
-        { text: '实际项目问题', link: '/Ques' },
+        { text: '基础组件', link: '/Components/custom/ruler' },
+        { text: '项目说明', link: '/Ques/deploy/base' },
       ],
       sidebar: {
         '/Library/': [
@@ -35,61 +35,48 @@ module.exports = {
         ],
         '/Components/': [
           {
-            title: '基础组件',
-            collapsable: true,
+            title: '自定义组件',
+            collapsable: false,
             children: [
-              {
-                title: '常用组件',
-                collapsable: false,
-                children: [
-                 
-                ]
-              },
-              {
-                title: '表单组件',
-                collapsable: false,
-                children: [
-                  
-                ]
-              },
-              {
-                title: 'TTable组件',
-                collapsable: false,
-                children: [
-                 
-                ]
-              },
-              {
-                title: 'TTreeTable组件',
-                collapsable: false,
-                children: [
-                  'ElementUi/TTable/tree' // TreeTable组件
-                ]
-              },
-              {
-                title: '图片/文件上传组件',
-                collapsable: false,
-                children: [
-                  
-                ]
-              }
+               'custom/ruler',
+               'custom/voice',
+               'custom/swipe',
+               'custom/timePicker',
+               'custom/calendar',
+               'custom/rate',
+               'custom/ring'
             ]
           },
           {
-            title: '基于AntDesign封装',
-            collapsable: true,
+            title: '基于vant封装',
+            collapsable: false,
             children: [
-              {
-                title: '常用组件',
-                collapsable: false,
-                children: [
-                ]
-              }
+              'vant/input'
             ]
           },
         ],
         '/Ques/' : [
-
+            {
+                title: '项目部署',
+                collapsable: false,
+                children: [
+                   'deploy/base'
+                ]
+            },
+            {
+                title: '注意事项',
+                collapsable: false,
+                children: [
+                    'attention/base'
+                ]
+            },
+            {
+                title: '待改进要素',
+                collapsable: false,
+                children: [
+                    'improve/base'
+                ]
+            },
         ]
       }
     },
